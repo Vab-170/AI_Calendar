@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "dayjs": "^1.11.13",
     "next": "^14.0.0",
     "openai": "^4.0.0",
