@@ -1,0 +1,8 @@
+// lib/types.ts
+export interface CalendarEvent {
+  id: string;
+  title: string;
+  start: Date;
+  end: Date;
+  description?: string;
+}

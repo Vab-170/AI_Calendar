@@ -5,3 +5,117 @@
 html, body {
   @apply bg-white text-black font-sans;
 }
+
+/* Enhanced Calendar Styling */
+.rbc-calendar {
+  @apply rounded-xl border-0;
+}
+
+.rbc-header {
+  @apply bg-gray-50 text-gray-700 font-semibold py-3 border-b border-gray-200;
+}
+
+.rbc-date-cell {
+  @apply text-gray-600;
+}
+
+.rbc-today {
+  @apply bg-blue-50;
+}
+
+.rbc-event {
+  border: 0 !important;
+  border-radius: 6px !important;
+  padding: 2px 6px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+
+.rbc-event:hover {
+  opacity: 0.8 !important;
+  transform: scale(1.02);
+  transition: all 0.2s ease;
+}
+
+.rbc-slot-selection {
+  @apply bg-blue-100 border-blue-300;
+}
+
+.rbc-day-bg.rbc-today {
+  @apply bg-blue-50;
+}
+
+.rbc-month-view {
+  border: 0;
+}
+
+.rbc-month-row {
+  @apply border-b border-gray-100;
+}
+
+.rbc-day-bg {
+  @apply border-r border-gray-100;
+}
+
+.rbc-off-range-bg {
+  @apply bg-gray-50;
+}
+
+/* Event type specific styling */
+.rbc-event.lecture {
+  background-color: #3B82F6 !important;
+}
+
+.rbc-event.tutorial {
+  background-color: #10B981 !important;
+}
+
+.rbc-event.club {
+  background-color: #8B5CF6 !important;
+}
+
+.rbc-event.social {
+  background-color: #EC4899 !important;
+}
+
+.rbc-event.exam {
+  background-color: #EF4444 !important;
+}
+
+.rbc-event.assignment {
+  background-color: #F59E0B !important;
+}
+
+.rbc-event.other {
+  background-color: #6B7280 !important;
+}
+
+/* Toolbar styling */
+.rbc-toolbar {
+  @apply mb-4 flex-wrap gap-2;
+}
+
+.rbc-toolbar button {
+  @apply px-3 py-2 rounded-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 transition-colors;
+}
+
+.rbc-toolbar button.rbc-active {
+  @apply bg-blue-500 text-white border-blue-500;
+}
+
+/* Custom scrollbar for better aesthetics */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 rounded-full;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
