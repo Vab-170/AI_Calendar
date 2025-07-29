@@ -202,10 +202,10 @@ export async function POST(req: NextRequest) {
 	/**
 	 * OPENAI API CALL - AI Processing
 	 * 
-	 * Sends the contextual prompt to GPT-4 for intelligent processing.
+	 * Sends the contextual prompt to GPT-4o-mini for intelligent processing.
 	 * 
 	 * Configuration:
-	 * - model: 'gpt-4' - Most capable model for complex reasoning
+	 * - model: 'gpt-4o-mini' - Cost-effective model optimized for structured tasks
 	 * - tools: Function definition for structured output
 	 * - tool_choice: 'auto' - AI decides when to use function calling
 	 * 
@@ -221,7 +221,7 @@ export async function POST(req: NextRequest) {
 	 * - Missing information (AI will apply smart defaults)
 	 */
 	const chat = await openai.chat.completions.create({
-		model: 'gpt-4',
+		model: 'gpt-4o-mini',
 		messages: [{ role: 'user', content: contextualPrompt }],
 		tools,
 		tool_choice: 'auto',

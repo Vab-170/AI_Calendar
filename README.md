@@ -4,12 +4,13 @@
   
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4-green?style=for-the-badge&logo=openai)](https://openai.com/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o--mini-green?style=for-the-badge&logo=openai)](https://openai.com/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/)
 
 **Transform your schedule with AI-powered planning. Simply describe your events in natural language and watch as our intelligent system organizes your academic and personal life.**
 
-[Demo](#-demo) • [Features](#-features) • [Getting Started](#-getting-started) • [Documentation](#-documentation)
+[🚀 Live Demo](https://your-ai-calendar.vercel.app) • [Features](#-features) • [Deploy Now](#-deploy-to-vercel) • [Documentation](#-documentation)
 
 </div>
 
@@ -117,6 +118,48 @@ Let AI parse natural language into structured calendar entries automatically.
    ```env
    OPENAI_API_KEY=sk-your-secret-key-here
    ```
+
+---
+
+## 🚀 Deploy to Vercel
+
+### **One-Click Deploy** (Recommended)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Vab-170/AI_Calendar&env=OPENAI_API_KEY&envDescription=OpenAI%20API%20Key%20for%20AI%20functionality&envLink=https://platform.openai.com/api-keys)
+
+### **Manual Deployment**
+
+1. **Push to GitHub** (if not already done)
+   ```bash
+   git add .
+   git commit -m "Ready for Vercel deployment"
+   git push origin main
+   ```
+
+2. **Deploy via Vercel CLI**
+   ```bash
+   # Install Vercel CLI
+   npm install -g vercel
+   
+   # Deploy your project
+   vercel
+   
+   # Follow the prompts and add your OPENAI_API_KEY
+   ```
+
+3. **Deploy via Vercel Dashboard**
+   - Go to [vercel.com](https://vercel.com/new)
+   - Import your GitHub repository
+   - Add `OPENAI_API_KEY` environment variable
+   - Click Deploy!
+
+### **Post-Deployment**
+- ✅ Your app will be live at: `https://ai-calendar-yourusername.vercel.app`
+- ✅ Backend APIs work automatically
+- ✅ Global CDN for fast worldwide access
+- ✅ Automatic HTTPS with free SSL
+
+**🎉 Your full-stack AI Calendar is now live and ready to use!**
 
 ---
 

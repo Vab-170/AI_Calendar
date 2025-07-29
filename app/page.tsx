@@ -3,8 +3,6 @@
  * 
  * This is the primary page component for the AI Calendar application, serving as
  * the main entry point and layout container for all calendar functionality.
- * It provides a modern, responsive interface that combines AI-powered event creation
- * with comprehensive calendar visualization.
  * 
  * Application Architecture:
  * - Next.js 14 App Router architecture
@@ -300,7 +298,7 @@ export default function Home() {
 			<footer className="mt-16 border-t border-gray-200 bg-white/50 backdrop-blur-sm">
 				<div className="max-w-7xl mx-auto px-6 py-8">
 					<div className="text-center text-gray-500 text-sm">
-						<p>Powered by OpenAI GPT-4 • Built with Next.js & React</p>
+						<p>Powered by OpenAI GPT-4o-mini • Built with Next.js & React</p>
 					</div>
 				</div>
 			</footer>
